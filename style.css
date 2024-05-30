@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+:root {
+  --main-color-card: #141414;
+  --gold-essential: #b1904e;
+  --background-color: #f0f0f0;
+  --textcolor: #ffff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doble-card {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s;
+  perspective: 1000px;
+}
+
+.doble-card:hover {
+  transform: rotateY(180deg);
+}
+
+.doble-card .card-back {
+  transform: rotateY(180deg);
+}
+
+.card-front {
+  background-color: var(--main-color-card);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 200px;
+  height: 300px;
+  position: absolute;
+}
+
+.card-back {
+  background-color: var(--main-color-card);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-box {
+  width: 130px;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--gold-essential);
+}
+
+.info-2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--gold-essential);
+}
+
+h5 {
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--textcolor);
+  font-weight: lighter;
+  margin-top: 5px;
+}
+
+.visao {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.visao h4 {
+  color: var(--gold-essential);
+  font-weight: lighter;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.visao p {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #fbfbfbc8;
+  font-weight: lighter;
+}
+
+.visao strong {
+  color: var(--background-color);
+}
+
+.line {
+  width: 30px;
+  color: #b1904e;
+  font-weight: lighter;
+}
